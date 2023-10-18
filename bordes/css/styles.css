@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    padding-top: 20px;
+    text-align: center;
+    background-color: #1c9a9e;
+}
+#page{
+    width: 960px;
+    margin: 0px auto 0px auto;
+    text-align: left;
+    background-color: white;
+}
+#header{
+    border-bottom: 2px solid #1c9a9e;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#bloque1{
+    text-align: left;
+    padding: 20px;
+}
+#bloquecito1{
+    padding-bottom: 20px;
+}
+#bloquecito2{
+    display: block;
+}
+#caja1{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px 30px 10px 30px;
+    width: 100px;
+    border-radius: 20px 30px 10px 50px;
+    float: left;
+    margin-left: 10%;
+}
+#caja2{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px 30px 10px 30px;
+    width: 100px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10%;
+}
+#caja3{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    background: linear-gradient(white, #1c9a9e);
+    border: 1px solid black;
+    padding: 10px 30px 10px 30px;
+    width: 100px;
+    border-radius: 40px;
+    float: left;
+    margin-left: 10%;
+}
+#caja4{
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    background: radial-gradient(white, #b6f1f3  );
+    border: 1px solid black;
+    padding: 10px 30px 10px 30px;
+    width: 100px;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10%;
+}
+#caja5{
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px 30px 10px 30px;
+    width: 100px;
+    border-radius: 40px;
+    float: left;
+    margin-left: 10%;
+}
+#caja6{
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px 30px 10px 30px;
+    width: 100px;
+    float: left;
+    margin-left: 10%;
+}
+#bloque2{
+    text-align: left;
+    padding: 15% 20px 20px 20px;
+}
+#bloquecito3{
+    text-align: left;
+}
+#bloquecito4{
+    display: block;
+    align-items: center;     
+}
+#caja7{
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 22px;
+    padding: 15px 30px 15px 30px;
+    box-shadow: 5px 5px 10px #1c9a9e;  
+}
+#caja8{
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;    
+}
+#caja9{
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-shadow: 3px 3px 10px #1c9a9e;
+    padding: 10px 30px 10px 30px;    
+}
+#caja10{
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: linear-gradient(30deg, #FFFFFF, #1c9a9e);
+    padding: 10px 30px 10px 30px;    
+}
+#footer{
+    border-top: 2px solid #1c9a9e;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
