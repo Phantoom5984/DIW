@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+nav ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    padding: 20px 0px;
+    margin: 0px 80px;
+}
+.submenu{
+    position: absolute;
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    text-align: center;
+    left: 50%;
+    margin-left: -50%;
+    top: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7em;
+}
+.submenu li{
+    height: 0px;
+    overflow: hidden;
+    transition: 0.4s;
+    animation: linear;
+}
+.menu:hover > .submenu li{
+    overflow: visible;
+    height: 100px;
+}
