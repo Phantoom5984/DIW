@@ -13,7 +13,7 @@ nav ul{
     list-style: none;
     display: flex;
     padding: 20px 0px;
-    margin: 0px 50px;
+    margin: 0px 80px;
 }
 .submenu{
     display: block;
@@ -24,9 +24,9 @@ nav ul{
     z-index: 2;
     width: 100px;
     text-align: center;
-    left: 50%;
+    left: -50%;
     margin-left: -50%;
-    top: 25px;
+    top: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.7em;
     height: 0px;
@@ -46,7 +46,7 @@ nav ul{
 }
 .submenu li:first-child{
     position: relative;
-    top: 25px;
+    top: 5px;
     border-radius: 3px 0px 0px 0px;
 }
 .submenu li:last-child{
