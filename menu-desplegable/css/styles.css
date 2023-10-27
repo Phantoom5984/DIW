@@ -50,10 +50,10 @@ nav ul{
 .submenu li:first-child{
     position: relative;
     top: 5px;
-    border-radius: 3px 0px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
 }
 .submenu li:last-child{
-    border-radius: 0px 0px 3px 0px;
+    border-radius: 0px 0px 8px 8px;
 }
 .submenu li:first-child:before {
     content:'';
