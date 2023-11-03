@@ -10,11 +10,11 @@
     <form id="registro" method="post"> <h1>Regístrate!</h1>
  <ul>
     <li>
-        <label for="nombre">Mi nombre es:</label>
+        <label for="nombre">Mi nombre es:</label><br>
         <input type="text" id="nombre" name="nombre" required autofocus>
     </li>
     <li>
-        <label for="email">Mi email es:</label>
+        <label for="email">Mi email es:<br>(Puedes introducir varios separados por comas)</label><br>
         <input type="email" id="email" name="email" required multiple>
     </li>
     <li>
@@ -22,23 +22,23 @@
         <input type="checkbox" id="recuerdame" name="recuerdame">
     </li>
     <li>
-        <label for="url">Mi dirección web es:</label>
+        <label for="url">Mi dirección web es:</label><br>
         <input type="url" id="url" name="url" placeholder="http://ejemplo.com">
     </li>
     <li>
-        <label for="password1">Me gustaría que mi password fuera:<br>(Al menos 6 carácteres, sin espacios)</label>
+        <label for="password1">Me gustaría que mi password fuera:<br>(Al menos 6 carácteres, sin espacios)</label><br>
         <input type="password" id="password1" name="password1" required pattern="\S{6,}">
     </li>
     <li>
-        <label for="password2">Mi password repetida es:</label>
+        <label for="password2">Mi password repetida es:</label><br>
         <input type="password" id="password2" name="password2" required pattern="\S{6,}">
     </li>
     <li>
-        <label for="conocimientos">En una escala del 1 al 10, mis conocimientos de HTML 5 es:</label>
+        <label for="conocimientos">En una escala del 1 al 10, mis conocimientos de HTML 5 es:</label><br>
         <input type="range" min="1" max="10" id="conocimientos" name="conocimientos">
     </li>
     <li>
-        <label for="fechaInicio">Por favor, inicia mi suscripción el día:</label>
+        <label for="fechaInicio">Por favor, inicia mi suscripción el día:</label><br>
         <input type="date" id="fechaInicio" name="fechaInicio" required placeholder="dd/mm/aaaa">
     </li>
     <li>
