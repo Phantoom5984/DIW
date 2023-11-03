@@ -1,0 +1,75 @@
+#registro{
+    padding: 10px auto 10px auto;
+    border: 2px 0px 2px 0px #888;
+    width: 710px;
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 20%);
+    background-image: url("../imgs/bg-form.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding-bottom: 15px;
+    display: block;
+    margin: auto;
+}
+form h1{
+    font-size: 2em;
+    padding-bottom: 20px;
+    background:
+    url("../imgs/bg-formtitle-left.png") left no-repeat,
+    url("../imgs/bg-formtitle-right.png") right no-repeat;
+    background-size: 100px auto;
+    font-family: "AcknowledgementMedium";
+}
+#registro-submit{
+    border: 0px;
+    border-radius: 5px;
+    background: radial-gradient( rgb(144, 144, 144), rgb(72, 72, 72));
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+    font-family: Tahoma, Geneva, sans-serif;
+    opacity: 80%;
+    height: auto;
+}
+#registro-submit:hover{
+    opacity: 100%;
+    transition: linear 0.25s;
+}
+input{
+    height: 25px;
+    background: none no-repeat top right;
+    border: none;
+    border-bottom: 2px solid black;
+}
+input:required{
+    background-image: url("../imgs/required.png");
+}
+input:valid:focus{
+    background-image: url("../imgs/valid.png");
+}
+input:invalid:focus{
+    background-image: url("../imgs/invalid.png");
+}
+::selection{
+    background-color: #484848;
+    color: #fff;
+    text-shadow: none;
+}
+label #registro-submit{
+    font-family: "LeagueGothic";
+}
+@font-face{
+    font-family: "LeagueGothic";
+    src: url("../fonts/LeagueGothic-Regular.ttf");
+    
+}
+@font-face {
+    font-family: "AcknowledgementMedium";
+    src: url("../fonts/Acknowledgement.otf");
+}
