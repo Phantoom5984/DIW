@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -7,6 +9,7 @@ body{
     background: linear-gradient(red,white);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: "Abel";
 }
 main{
     width: 1000px;
@@ -15,7 +18,7 @@ main{
     padding: 20px;
 }
 #header1{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Luckiest Guy";
     color:white;
     font-size: 1.1em;
     border-bottom: 6px solid black;
@@ -32,7 +35,6 @@ main{
     left:-5px
 }
 nav{
-    font-family: 'Courier New', Courier, monospace;
     color:silver;
     font-size: 1.4em;
     text-align: center;
@@ -122,7 +124,6 @@ a:hover{
     text-shadow: 2px 2px 0px red;
 }
 #content{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.8em;
     background-color: white;
     overflow: hidden;
@@ -180,4 +181,21 @@ footer{
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 0px 0px 20px 20px;
+}
+#barra{
+width: 705px;
+margin:5px;
+height: 16px;
+padding: 2px;
+border: 1px solid #CCCCCC;
+background: #EEEEEE;
+}
+#progreso{
+position: absolute;
+width: 0px;
+height: 16px;
+background: rgba(0,0,150,.2);
+}
+#reproductor{
+    background-color: rgb(255, 255, 255);
 }

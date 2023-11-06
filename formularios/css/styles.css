@@ -50,6 +50,7 @@ input{
     background: none no-repeat top right;
     border: none;
     border-bottom: 2px solid black;
+    text-align: center;
 }
 input:required{
     background-image: url("../imgs/required.png");
@@ -67,6 +68,9 @@ input:invalid:focus{
 }
 label #registro-submit{
     font-family: "LeagueGothic";
+}
+#cantidad{
+    width: 40px;
 }
 @font-face{
     font-family: "LeagueGothic";

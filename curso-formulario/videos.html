@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reproductor.css">
+    <title>Curso-Actualizado</title>
+</head>
+<body>
+  <main>
+     <header id="header1">
+        <h1><img id="foto" src="imgs/logo.png">Curso de HTML5 y CSS3</h1>
+     </header>
+     <nav>
+        <ul id="lista">
+            <li id="contenidos"><a href="index.html">Contenidos</a></li>
+            <li id="videos" class="submenu"><a href="">Videos</a>
+            <ul>
+                <li><a href="">Vídeo 1</a></li>
+                <li><a href="">Vídeo 2</a></li>
+                <li><a href="">Vídeo 3</a></li>
+            </ul></li>
+            </li>
+            <li id="contacto"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+        <div id="reproductor">
+        <video id="medio" width="720" height="400"> <source src="media/trailer.mp4">
+        <source src="media/trailer.ogg">
+        </video>
+        <div id="barra">
+        <div id="progreso"></div>
+        </div>
+        </div>
+        <nav>
+        <input type="button" id="reiniciar" value="reiniciar">
+        <input type="button" id="retrasar" value="&laquo;">
+        <input type="button" id="play" value="&#9658;">
+        <input type="button" id="adelantar" value="&raquo;">
+        <input type="button" id="silenciar" value="silenciar">
+        <label>Volumen</label>
+        <input type="button" id="menosVolumen" value="-">
+        <input type="button" id="masVolumen" value="+">
+        </nav>
+        <footer>
+            <p>HTML5 y CSS3<br>
+            Diseño de interfaces web - 2DAW</p>
+         </footer>
+  </main>
+</body>
+</html>
