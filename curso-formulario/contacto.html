@@ -26,20 +26,25 @@
     </nav>
     <div class="m">
      <div id="contenedorFormulario">
-        <h1>Contáctenos</h1>
-        <form>
-            <ul>
+         <form>
+             <ul>
+                <h1>Contáctenos</h1>
                 <li>
-                    <label for="nombre">Escriba su nombre</label><br>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre" value="Escriba su nombre"  class="inp nomail" required>
+                    <label></label>
+                    <datalist id="nombres">
+                        <option value="alex">
+                        <option value="juan">
+                        <option value="ana">
+                        <option value="pedro">
+                      </datalist>
                 </li>
                 <li>
-                    <label for="email">Escriba su email</label><br>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" class="inp nomail" value="Escriba su email" required>
+                    <label></label>
                 </li>
                 <li>
-                    <label for="textarea">Su mensaje...</label><br>
-                    <input type="textarea" id="textarea" name="textarea" required>
+                    <input type="textarea" id="textarea" name="textarea" class="inp" value="Su mensaje..." required>
                 </li>
                 <li>
                     <input type="submit" id="registro-submit" name="registro-submit" value="ENVIAR">

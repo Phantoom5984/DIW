@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -12,7 +13,7 @@ body{
     font-family: "Abel";
 }
 main{
-    width: 1000px;
+    width: 1300px;
     margin: 0px auto 0px auto;
     text-align: left;
     padding: 20px;
@@ -126,16 +127,96 @@ a:hover{
 .m{
     background-image: url("../imgs/fondoForm.jpg");
     background-size: cover;
-    align-items: center;
+    text-align: center;
+}
+input{
+    background: none;
 }
 #contenedorFormulario{
+    position: relative;
     display: inline-block;
     margin: 50px;
-    width: 80%;
+    width:700px;
     padding: 20px 50px 20px 50px;
     background-color: rgba(200, 200, 200, 0.7);
     box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
-
+}
+#contenedorFormulario h1{
+    position: absolute;
+    margin-top: -16px;
+    margin-left: 490px;
+    background-color: rgba(255, 255, 255,0.7);
+    font-family: "Aguafina Script";
+    color: #333;
+    font-style: italic;
+    letter-spacing: 5px;
+    text-shadow: 0 0 2px #777;
+    padding: 0px 10px 0px 10px;
+}
+.inp{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-style: bold;
+    padding: 1px 4px 1px 45px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in;
+}
+.nomail{
+    height: 32px;
+    width: 330px;
+}
+.nomail:valid:focus{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+    background-image: url("../imgs/valid.png");
+    left: 390px;
+}
+.nomail:invalid:focus{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+    background-image: url("../imgs/invalid.png");
+    background-repeat: no-repeat;
+    left: 390px;
+}
+#nombre{
+    background-image: url("../imgs/icon-nombre.png");
+    left: 10px;
+    background-repeat: no-repeat;
+}
+#email{
+    background-image: url("../imgs/icon-correo.png");
+    left: 10px;
+    background-repeat: no-repeat;
+}
+input:required + label::after{
+    content: '*';
+}
+#textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 500px;
+    height: 150px;
+    background-image: url("../imgs/icon-mensaje.png");
+    background-repeat: no-repeat;
+    left: 10px;
+}
+#textarea:focus{
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+}
+#registro-submit{
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 1px solid #434343;
+    color: white;
+    background: linear-gradient(to bottom, #5e5e5e, #2a2a2a);
+    box-shadow: inset 0px 1px 1px #353535;
+    cursor: pointer;
+}
+#registro-submit:hover{
+    background: linear-gradient(to top, #5e5e5e, #2a2a2a);
 }
 footer{
     color: white;
