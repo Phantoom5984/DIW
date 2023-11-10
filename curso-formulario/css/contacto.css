@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -129,9 +129,6 @@ a:hover{
     background-size: cover;
     text-align: center;
 }
-input{
-    background: none;
-}
 #contenedorFormulario{
     position: relative;
     display: inline-block;
@@ -141,9 +138,12 @@ input{
     background-color: rgba(200, 200, 200, 0.7);
     box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
 }
+#contenedorFormulario li{
+    padding: 0px;
+}
 #contenedorFormulario h1{
     position: absolute;
-    margin-top: -16px;
+    margin-top: -50px;
     margin-left: 490px;
     background-color: rgba(255, 255, 255,0.7);
     font-family: "Aguafina Script";
@@ -163,33 +163,37 @@ input{
     padding: 1px 4px 1px 45px;
     margin-bottom: 10px;
     transition: all 0.4s ease-in;
+    background: none;
+}
+#nombre:focus:valid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/valid.png") no-repeat right 2px top 5px;
+}
+#nombre:focus:invalid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/invalid.png") no-repeat right 2px top 5px;
+}
+#email:focus:valid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/valid.png") no-repeat right 2px top 5px;
+}
+#email:focus:invalid{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255);
+    background: url("../imgs/invalid.png") no-repeat right 2px top 5px;
+}
+#nombre{
+    background: url("../imgs/icon-nombre.png") no-repeat left 10px top -5px;
+}
+#email{
+    background: url("../imgs/icon-correo.png") no-repeat left 10px top -5px;
 }
 .nomail{
     height: 32px;
     width: 330px;
-}
-.nomail:valid:focus{
-    width: 370px;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
-    background-image: url("../imgs/valid.png");
-    left: 390px;
-}
-.nomail:invalid:focus{
-    width: 370px;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
-    background-image: url("../imgs/invalid.png");
-    background-repeat: no-repeat;
-    left: 390px;
-}
-#nombre{
-    background-image: url("../imgs/icon-nombre.png");
-    left: 10px;
-    background-repeat: no-repeat;
-}
-#email{
-    background-image: url("../imgs/icon-correo.png");
-    left: 10px;
-    background-repeat: no-repeat;
 }
 input:required + label::after{
     content: '*';
@@ -199,9 +203,7 @@ input:required + label::after{
     font-size: 1em;
     width: 500px;
     height: 150px;
-    background-image: url("../imgs/icon-mensaje.png");
-    background-repeat: no-repeat;
-    left: 10px;
+    background: url("../imgs/icon-mensaje.png") no-repeat left 10px top 7px;
 }
 #textarea:focus{
     box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
