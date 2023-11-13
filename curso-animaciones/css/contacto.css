@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+@keyframes cabecera{
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    0%{
+        rotate: 0deg;
+    } 
+}
+header>h1>img{
+    animation: cabecera 5s infinite;
+}
 *{
     margin: 0px;
     padding: 0px;

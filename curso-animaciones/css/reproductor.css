@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+@keyframes cabecera{
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    0%{
+        rotate: 0deg;
+    } 
+}
+header>h1>img{
+    animation: cabecera 5s infinite;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -125,101 +138,54 @@ a:hover{
     color:white;
     text-shadow: 2px 2px 0px red;
 }
-.m{
-    background-image: url("../imgs/fondoForm.jpg");
-    background-size: cover;
+#content{
+    font-size: 0.8em;
+    background-color: white;
+    overflow: hidden;
+    height: 1%;
+}
+article{
+    width: 240px;
+    border-width: 50px 10px 50px 10px;
+    border-style:solid;
+    border-image: url("../imgs/movil.png");
+    border-image-slice: 64 20 64 20;
     text-align: center;
+    line-height: 1.8em;
+    padding: 5px 5px 22px 5px;
+    margin: 30px;
+    float: left;
+    margin-top: 30px;
 }
-#contenedorFormulario{
+.article_header{
+    border-bottom: 1px solid #999999;
     position: relative;
-    display: inline-block;
-    margin: 50px;
-    width:700px;
-    padding: 20px 50px 20px 50px;
-    background-color: rgba(200, 200, 200, 0.7);
-    box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
 }
-#contenedorFormulario li{
-    padding: 0px;
+.a1{
+    transform: rotate(-2deg);
 }
-#contenedorFormulario h1{
+.a2{
+    transform: rotate(2deg);
+}
+.chincheta{
     position: absolute;
-    margin-top: -50px;
-    margin-left: 490px;
-    background-color: rgba(255, 255, 255,0.7);
-    font-family: "Aguafina Script";
-    color: #333;
-    font-style: italic;
-    letter-spacing: 5px;
-    text-shadow: 0 0 2px #777;
-    padding: 0px 10px 0px 10px;
+    width: 35px;
+    height: 49px;
+    top:-78px;
+    background-image:url("../imgs/chincheta.png");
 }
-.inp{
-    display: inline-block;
-    border: 1px solid #e5e5e5;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.1);
-    color: black;
-    font-style: bold;
-    padding: 1px 4px 1px 45px;
-    margin-bottom: 10px;
-    transition: all 0.4s ease-in;
-    background: none;
+.c1{
+    left:199px;
 }
-#nombre:focus:valid{
-    width: 370px;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255);
-    background: url("../imgs/valid.png") no-repeat right 2px top 5px;
+.c2{
+    left:120px;
 }
-#nombre:focus:invalid{
-    width: 370px;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255);
-    background: url("../imgs/invalid.png") no-repeat right 2px top 5px;
+.c3{
+    left:30px;
 }
-#email:focus:valid{
-    width: 370px;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255);
-    background: url("../imgs/valid.png") no-repeat right 2px top 5px;
-}
-#email:focus:invalid{
-    width: 370px;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255);
-    background: url("../imgs/invalid.png") no-repeat right 2px top 5px;
-}
-#nombre{
-    background: url("../imgs/icon-nombre.png") no-repeat left 10px top -5px;
-}
-#email{
-    background: url("../imgs/icon-correo.png") no-repeat left 10px top -5px;
-}
-.nomail{
-    height: 32px;
-    width: 330px;
-}
-input:required + label::after{
-    content: '*';
-}
-#textarea{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    width: 500px;
-    height: 150px;
-    background: url("../imgs/icon-mensaje.png") no-repeat left 10px top 7px;
-}
-#textarea:focus{
-    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
-}
-#registro-submit{
-    margin: 10px 0px 10px 0px;
+h2{
     padding: 10px;
-    border: 1px solid #434343;
-    color: white;
-    background: linear-gradient(to bottom, #5e5e5e, #2a2a2a);
-    box-shadow: inset 0px 1px 1px #353535;
-    cursor: pointer;
-}
-#registro-submit:hover{
-    background: linear-gradient(to top, #5e5e5e, #2a2a2a);
+    font-size: 1.2em;
 }
 footer{
     color: white;
@@ -230,4 +196,21 @@ footer{
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 0px 0px 20px 20px;
+}
+#barra{
+width: 705px;
+margin:5px;
+height: 16px;
+padding: 2px;
+border: 1px solid #CCCCCC;
+background: #EEEEEE;
+}
+#progreso{
+position: absolute;
+width: 0px;
+height: 16px;
+background: rgba(0,0,150,.2);
+}
+#reproductor{
+    background-color: rgb(255, 255, 255);
 }

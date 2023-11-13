@@ -1,54 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-@keyframes cabecera{
-    0%{
-        rotate: 0deg;
-    }
-    50%{
-        rotate: 180deg;
-    }
-    0%{
-        rotate: 0deg;
-    } 
-}
-header>h1>img{
-    animation: cabecera 5s infinite;
-}
-@keyframes mueveChincheta1{
-    0%{left:0px;}
-    100%{left:199px;} 
-}
-@keyframes animArticle1{
-    0%{rotate:0deg;}
-    100%{rotate:-2deg;} 
-}
-@keyframes mueveChincheta2{
-    0%{left:0px;}
-    100%{left:120px;} 
-}
-@keyframes mueveChincheta3{
-    0%{left:0px;}
-    100%{left:30px;} 
-}
-@keyframes animArticle3{
-    0%{rotate:0deg;}
-    100%{rotate:2deg;} 
-}
-.chincheta1{
-    animation: mueveChincheta1 1s ease-in;
-}
-.animArticle1{
-    animation: animArticle1 0.5s 1s forwards;
-}
-.chincheta2{
-    animation: mueveChincheta2 1s 1.5s ease-in;
-}
-.chincheta3{
-    animation: mueveChincheta3 1s 2.5s ease-in;
-}
-.animArticle3{
-    animation: animArticle3 0.5s 3.5s forwards;
-}
 *{
     margin: 0px;
     padding: 0px;
