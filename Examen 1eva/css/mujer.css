@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    text-align: center;
+    background: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Abel";
+}
+main{
+    width: 95%;
+    margin: 0px auto 0px auto;
+    text-align: left;
+    padding: 20px;
+}
+#header1{
+    font-family: "Luckiest Guy";
+    color:white;
+    font-size: 1.1em;
+    border-bottom: 6px solid black;
+    background: linear-gradient(#1692f1,#68c9ee);
+    border-radius: 20px 20px 0px 0px;
+}
+#header1 h1{
+    padding: 20px;
+    text-align: center;
+}
+#foto{
+    position: relative;
+    top:10px;
+    float: left;
+    width: 100px;
+}
+nav{
+    color:silver;
+    font-size: 1.4em;
+    text-align: center;
+}
+nav li{
+    padding-top: 20px;
+    margin: 0px 100px 20px 100px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+}
+.submenu {
+    position: relative;
+}
+.submenu > ul > li > a {
+    color: white;
+    margin: auto;
+    text-decoration: none;
+}
+.submenu > ul {
+    position: absolute;
+    left: -20px;
+    height: 0px;
+    overflow: hidden;
+    width: 145px;
+    transition: height linear 0.5s;
+    z-index: 2;
+}
+.submenu:hover > ul {
+    height: 200px;
+}
+.submenu > ul > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0px;
+    background-color: #e34c26;
+}
+.submenu > ul > li:nth-child(odd) {
+    background-color: #f06529 !important;
+}
+.submenu > ul > li:first-child {
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 15px;
+    position: relative;
+}
+.submenu > ul > li:last-child {
+    border-radius: 0px 0px 8px 8px;
+}
+.submenu > ul > li > a:hover{
+    background-color: #ff7e42;
+}
+nav > ul > li > ul > li:first-child:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 5px solid transparent;
+    border-bottom-color: #e34c26;
+    left: 50%;
+    top: -11px;
+    margin-left: -5px;
+    z-index: 19;
+}
+a{
+    text-decoration: none;
+    color:blue;
+    text-shadow: 0px 0px 5px white;
+    transition: 0.5s;
+}
+nav a:hover{
+    color:white;
+    text-shadow: 2px 2px 0px red;
+}
+#content{
+    background: linear-gradient(#d2a206,#dbf116);
+    padding: 5px;
+    display: flex;
+    flex-direction:row;
+    height: 500px;
+}
+table{
+    text-align: center;
+    margin: 40px;
+    background-color: white ;
+    width: 100%;
+}
+th{
+    background-color: rgb(157, 200, 238) ;
+}
+td{
+    background-color: rgb(160, 228, 228);
+}
+table, td, th{
+    border-bottom: 1px solid black;
+}
+th, td{
+    padding: 15px 10px 20px 20px;
+}
+footer{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    background: linear-gradient(#68c9ee,#1692f1);
+    border-top: 6px black solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 20px 20px;
+    font-family: "Luckiest Guy";
+}
