@@ -114,75 +114,58 @@ a{
 nav a:hover{
     text-shadow: 2px 2px 0px blue;
 }
-#contenedor2 h1 a{
-    color: black;
-}
 #content{
     background: url("../imgs/pexels-leandro-boogalu-1390403.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border:5px solid black;
-    padding: 5px;
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    height: 100%;
-}
-h2 a{
-    color:black;
-}
-article{
-    width: 240px;
     text-align: center;
-    padding: 25px 25px 25px 25px;
-    margin: 80px;
-    margin-left: 15%;
-    float:left;
-    background: rgb(68,85,90,0.5);
+    box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border: 5px solid black;
 }
-.article_header{
-    border-bottom: 1px solid #999999;
-    position: relative;
+form h1{
+    margin: 10px;
 }
-article:hover{
-    box-shadow: 0px 0px 5px black;
-    background: rgb(68,85,90);
-}
-#contenedor2{
-    width: 90%;
-    height: 100%;
-    border-right: 5px solid black;
-}
-#contenedor3{
-    border:5px solid black;
-    border-radius: 5px;
-    height: 200px;
-    padding:20px;
-}
-#fotoHombre{
-    width: 200px;
-}
-#fotoMujer{
-    width: 200px;
-}
-#contenedor4{
-    width: 10%;
-}
-#lista2{
-    list-style-type: ">";
-    margin: 20px;
-}
-#lista3{
+form ul{
     list-style: none;
-    height: 100%;
-    margin:10px;
-    background: rgb(68,85,90,0.5);
-    color: white;
 }
-#lista3 a{
-    text-decoration:underline;
-    color:rgb(72, 72, 240);
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+.inp{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    transition: all 0.4s ease-in;
+    background: none;
+    text-align: center;
+    width: 700px;
+    height: 50px;
+    font-size: 1em;
+}
+.inp:focus:valid{
+    background-color: green;
+}
+.inp:focus:invalid{
+    background-color: red;
+}
+#telprin{
+    width: 50px;
+}
+#fechaInicio{
+    initial-value: "Por favor, indica su fecha de nacimiento:";
+}
+#enviar{
+    width: 100px;
+    height: 50px;
+    background: rgb(127, 139, 143);
+    color: black;
+    font-weight: bold;
+}
+#enviar:hover{
+    box-shadow: 2px 2px 0px gray;
 }
 footer{
     color: white;

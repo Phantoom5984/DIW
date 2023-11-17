@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pedidos.css">
+    <title>Examen</title>
+</head>
+<body>
+  <main>
+     <header id="header1">
+        <h1><img id="foto" src="imgs/espornets.png"><a href="index.html">SPORTNETS</a></h1>
+     <nav>
+        <ul id="lista">
+            <li><a href="index.html">Home</a></li> 
+            <li id="productos" class="submenu"><a href="index.html">Productos</a><ul>
+                <li><a href="hombre.html">Hombre</a></li>
+                <li><a href="mujer.html">Mujer</a></li>
+            </ul></li>
+            <li><a href="pedidos.html">Pedidos</a></li> 
+        </ul>
+    </nav>
+</header>
+     <div id="content">
+        <form id="registro" method="post"> <h1>¡Regístrate y haz tu pedido!</h1>
+            <ul>
+               <li>
+                   <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre y apellidos:" class="inp" required>
+               </li>
+               <li>
+                <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]{1}" placeholder="Introduzca su DNI:" class="inp" required>
+            </li>
+               <li>
+                   <input type="email" id="email" name="email" placeholder="Introduzca su email:" class="inp" required>
+               </li>
+               <li>
+                <input type="text" id="telprin" name="telprin" value="+34" pattern="[+]{1}[0-9]{2}" class="inp" required>
+                <input type="text" id="tel" name="tel" placeholder="Introduzca su número de contacto, pueden ser más de uno separados por comas:" pattern="[0-9]{9}" class="inp" required multiple>
+               </li>
+               <li>
+                   <input type="date" id="fechaInicio" name="fechaInicio" placeholder="Por favor, indica su fecha de nacimiento:" class="inp" required>
+               </li>
+               <li>
+                <input type="text" id="produc" name="produc" placeholder="Elija el producto y el color de la caja:" list="lista-nombres" class="inp" required>
+                <datalist id="lista-nombres">
+                    <option value="ZM-120-RUN">
+                    <option value="ZM-150-PRO">
+                    <option value="ZM-120-SUP">
+                    <option value="ZM-120-Pro">
+                    <option value="ZH-120-RUN">
+                    <option value="ZH-150-PRO">
+                    <option value="ZH-120-SUP">
+                    <option value="ZH-120-Pro">
+                </datalist>
+            </li>
+            <li>
+            <input type="color" id="campoColor" name="campoColor" class="inp" required>
+            </li>
+               <li>
+                   <input type="number" id="cantidad" name="cantidad" min="1" max="5" placeholder="Me gustaría recibir:" class="inp" required>
+               </li>
+               <li>
+                   <input type="submit" id="enviar" name="enviar" value="ENVIAR">
+               </li>
+            </ul>
+               </form>
+        </div>
+     <footer>
+        <p>ESPORNETS - Calzado deportivo de calidad para todos.</p>
+     </footer>
+    </main>  
+</body>
+</html>
