@@ -1,45 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Kanit&family=Lato&display=swap');
+
+/* Animaciones */
+@keyframes logo {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.a1 {
+    animation: logo 1s;
+}
+
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     text-align: center;
     background: url("../imgs/pexels-leandro-boogalu-1390403.jpg");
     background-repeat: no-repeat;
     font-family: "Abel";
 }
-main{
+
+main {
     width: 95%;
     margin: 0px auto 0px auto;
     text-align: left;
     padding: 20px;
 }
-#header1{
+
+#header1 {
     font-family: "Lato";
-    color:white;
+    color: white;
     font-size: 1.1em;
     border-bottom: 6px solid black;
-    background: linear-gradient(black 70%,white);
+    background: linear-gradient(black 70%, white);
 }
-#header1 h1{
+
+#header1 h1 {
     padding: 20px;
     text-align: center;
 }
-#foto{
+
+#foto {
     position: relative;
-    top:10px;
+    top: 10px;
     float: left;
     width: 100px;
     border-radius: 50%;
 }
-nav{
-    color:silver;
+
+nav {
+    color: silver;
     font-size: 1.4em;
     text-align: center;
 }
-nav li{
+
+nav li {
     padding-top: 20px;
     margin: 0px 100px 20px 100px;
     list-style: none;
@@ -49,16 +73,21 @@ nav li{
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 10px;
+    font-family: "Kanit";
 }
+
+/* Hacer un submenún */
 .submenu {
     position: relative;
 }
-.submenu > ul > li > a {
+
+.submenu>ul>li>a {
     color: white;
     margin: auto;
     text-decoration: none;
 }
-.submenu > ul {
+
+.submenu>ul {
     position: absolute;
     left: -20px;
     height: 0px;
@@ -67,31 +96,34 @@ nav li{
     transition: height linear 0.5s;
     z-index: 2;
 }
-.submenu:hover > ul {
+
+.submenu:hover>ul {
     height: 200px;
 }
-.submenu > ul > li {
+
+.submenu>ul>li {
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
     margin: 0px;
     background-color: #8a42ff;
 }
-.submenu > ul > li:nth-child(odd) {
+
+.submenu>ul>li:nth-child(odd) {
     background-color: #26b7e3 !important;
 }
-.submenu > ul > li:first-child {
+
+.submenu>ul>li:first-child {
     border-radius: 8px 8px 0px 0px;
     margin-top: 15px;
     position: relative;
 }
-.submenu > ul > li:last-child {
+
+.submenu>ul>li:last-child {
     border-radius: 0px 0px 8px 8px;
-}s
-.submenu > ul > li > a:hover{
-    background-color: #8a42ff;
 }
-nav > ul > li > ul > li:first-child:before {
+
+nav>ul>li>ul>li:first-child:before {
     content: '';
     position: absolute;
     width: 1px;
@@ -103,48 +135,57 @@ nav > ul > li > ul > li:first-child:before {
     margin-left: -5px;
     z-index: 19;
 }
-a{
+
+a {
     text-decoration: none;
-    color:white;
+    color: white;
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.808);
     transition: 0.5s;
 }
-nav a:hover{
+
+nav a:hover {
     text-shadow: 2px 2px 0px blue;
 }
-#content{
+
+#content {
     background: url("../imgs/pexels-leandro-boogalu-1390403.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border:5px solid black;
+    border: 5px solid black;
     padding: 5px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     height: 500px;
 }
-table{
+
+table {
     text-align: center;
     margin: 40px;
-    background-color: white ;
+    background-color: white;
     width: 100%;
 }
-th{
-    background-color: rgb(157, 200, 238) ;
+
+th {
+    background-color: rgb(157, 200, 238);
 }
-td{
+
+td {
     background-color: rgb(160, 228, 228);
 }
-table, td, th{
+
+table,td,th {
     border-bottom: 1px solid black;
 }
-th, td{
+
+th,td {
     padding: 15px 10px 20px 20px;
 }
-footer{
+
+footer {
     color: white;
     font-size: 1em;
     text-align: center;
-    background: linear-gradient(white,black 70%);
+    background: linear-gradient(white, black 70%);
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: "Lato";

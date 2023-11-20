@@ -1,46 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Kanit&family=Lato&display=swap');
+
+/* Animaciones */
+@keyframes logo {
+    0% {
+        left: -100px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.a1 {
+    animation: logo 1s;
+}
+
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     text-align: center;
     background: url("../imgs/pexels-leandro-boogalu-1390403.jpg");
     background-repeat: no-repeat;
-    font-family: "Abel";
+    font-family: "Roboto";
 }
-main{
+
+main {
     width: 95%;
     height: 100%;
     margin: 0px auto 0px auto;
     text-align: left;
     padding: 20px;
 }
-#header1{
+
+#header1 {
     font-family: "Lato";
-    color:white;
+    color: white;
     font-size: 1.1em;
     border-bottom: 6px solid black;
-    background: linear-gradient(black 70%,white);
+    background: linear-gradient(black 70%, white);
 }
-#header1 h1{
+
+#header1 h1 {
     padding: 20px;
     text-align: center;
 }
-#foto{
+
+#foto {
     border-radius: 50%;
     position: relative;
-    top:10px;
+    top: 10px;
     float: left;
     width: 100px;
 }
-nav{
-    color:silver;
+
+nav {
+    color: silver;
     font-size: 1.4em;
     text-align: center;
 }
-nav li{
+
+nav li {
     padding-top: 20px;
     margin: 0px 100px 20px 100px;
     list-style: none;
@@ -50,17 +73,21 @@ nav li{
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 10px;
+    font-family: "Kanit";
 }
-/* Hacer in submenú */
+
+/* Hacer un submenún */
 .submenu {
     position: relative;
 }
-.submenu > ul > li > a {
+
+.submenu>ul>li>a {
     color: white;
     margin: auto;
     text-decoration: none;
 }
-.submenu > ul {
+
+.submenu>ul {
     position: absolute;
     left: -20px;
     height: 0px;
@@ -69,31 +96,34 @@ nav li{
     transition: height linear 0.5s;
     z-index: 2;
 }
-.submenu:hover > ul {
+
+.submenu:hover>ul {
     height: 200px;
 }
-.submenu > ul > li {
+
+.submenu>ul>li {
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
     margin: 0px;
     background-color: #8a42ff;
 }
-.submenu > ul > li:nth-child(odd) {
+
+.submenu>ul>li:nth-child(odd) {
     background-color: #26b7e3 !important;
 }
-.submenu > ul > li:first-child {
+
+.submenu>ul>li:first-child {
     border-radius: 8px 8px 0px 0px;
     margin-top: 15px;
     position: relative;
 }
-.submenu > ul > li:last-child {
+
+.submenu>ul>li:last-child {
     border-radius: 0px 0px 8px 8px;
-}s
-.submenu > ul > li > a:hover{
-    background-color: #8a42ff;
 }
-nav > ul > li > ul > li:first-child:before {
+
+nav>ul>li>ul>li:first-child:before {
     content: '';
     position: absolute;
     width: 1px;
@@ -105,16 +135,19 @@ nav > ul > li > ul > li:first-child:before {
     margin-left: -5px;
     z-index: 19;
 }
-a{
+
+a {
     text-decoration: none;
-    color:white;
+    color: white;
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.808);
     transition: 0.5s;
 }
-nav a:hover{
+
+nav a:hover {
     text-shadow: 2px 2px 0px blue;
 }
-#content{
+
+#content {
     background: url("../imgs/pexels-leandro-boogalu-1390403.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,13 +156,16 @@ nav a:hover{
     padding: 10px;
     border: 5px solid black;
 }
-form h1{
+
+form h1 {
     margin: 10px;
 }
-form ul{
+
+form ul {
     list-style: none;
 }
-.inp{
+
+.inp {
     display: inline-block;
     border: 1px solid #e5e5e5;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
@@ -144,34 +180,42 @@ form ul{
     width: 700px;
     height: 50px;
     font-size: 1em;
+    font-style: italic;
 }
-.inp:focus:valid{
+
+.inp:focus:valid {
     background-color: green;
 }
-.inp:focus:invalid{
+
+.inp:focus:invalid {
     background-color: red;
 }
-#telprin{
+
+#telprin {
     width: 50px;
 }
-#fechaInicio{
+
+#fechaInicio {
     initial-value: "Por favor, indica su fecha de nacimiento:";
 }
-#enviar{
+
+#enviar {
     width: 100px;
     height: 50px;
     background: rgb(127, 139, 143);
     color: black;
     font-weight: bold;
 }
-#enviar:hover{
+
+#enviar:hover {
     box-shadow: 2px 2px 0px gray;
 }
-footer{
+
+footer {
     color: white;
     font-size: 1em;
     text-align: center;
-    background: linear-gradient(white,black 70%);
+    background: linear-gradient(white, black 70%);
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: "Lato";
