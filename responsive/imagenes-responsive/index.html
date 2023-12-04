@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Imágenes Responsive</title>
+</head>
+<body>
+    <picture>
+        <source media="(min-width: 800px)" srcset="imgs/globo.jpg" />
+        <source media="(max-width: 799px)" srcset="imgs/globo2.jpg" />
+        <img src="elva-800w.jpg"/>
+      </picture>
+      <picture>
+        <source media="(min-width: 800px)" srcset="imgs/globo.jpg" />
+        <source media="(max-width: 799px)" srcset="imgs/globo2.jpg" />
+        <source media="(max-width: 799px)" srcset="imgs/globo2.jpg" />
+        <img src="elva-800w.jpg"/>
+      </picture>
+</body>
+</html>
