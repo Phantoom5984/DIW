@@ -28,6 +28,10 @@ body {
     padding: 0px;
 }
 
+.item1 a{
+    display: none;
+}
+
 .item2 {
     grid-area: 2/1/2/7;
     background-color: rgb(51, 47, 47);
@@ -69,8 +73,27 @@ body {
 
     .item1 {
         grid-area: 1/1;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2px;
+        
+    }
+
+    .sub-menu-item{
+        display: none;
+    }
+
+    .item1 a{
+        display: block;
+        padding: 0 1em 0;
+        text-align: center;
+        padding: 10px 15px;
+        color: #fff;
+        background-color: #0084B4;
+        text-decoration: none;
+    }
+
+    .menu:hover .sub-menu-item{
+    display: block;
+    list-style: none;
+    text-align: center;
     }
 
     .item2 {
