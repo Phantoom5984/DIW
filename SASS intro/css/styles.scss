@@ -1,0 +1,35 @@
+$padding: 20px;
+$width:100%;
+@mixin parrafo($color,$font-size,$padding){
+    color:$color;
+    font-size: $font-size;
+    padding: $padding;
+}
+body{
+    width: $width;
+    height: auto;
+}
+div{
+    padding: $padding;
+}
+#primero{
+    .destacado{
+        @include parrafo(#FF8000,1.6em,6px);
+        text-align: center;
+    }
+
+}
+#segundo{
+    .destacado{
+        @include parrafo(#2E5F64,1.4em,5px);
+        text-decoration: underline;
+    }
+    :not(.destacado){
+        &::first-line{
+            font-style: italic;
+        }
+    }
+    #parrafos{
+        text-align: right;
+    }
+}
