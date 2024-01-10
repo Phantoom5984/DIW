@@ -1,0 +1,67 @@
+$texto:#eee;
+$texto2:#fff;
+$fondo:#666;
+$fondo2:#888;
+@mixin color($texto,$fondo){
+    color:$texto;
+    background:$fondo;
+}
+@mixin transicion($property,$duration,$timing:linear){
+    transition: $property $duration $timing;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+header{
+    @include color(black,rgb(214, 210, 210));
+    font-size: 2em;
+}
+nav{
+    @include color($texto,$fondo);
+    ul{
+        margin: 0px;
+    }
+}
+.categoria{
+    text-decoration: none;
+    padding: 10px;
+    a{
+        
+        &:hover{
+            @include color($texto2,$fondo2);
+        }
+    }
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    &:hover >.submenu{
+            height: 200px;
+    }
+}
+
+
+.submenu{
+    position: absolute;
+    height: 0px;
+    left:-20px;
+    overflow: hidden;
+    width: 145px;
+    @include transicion(height,0.5s,linear);
+    >li{ 
+            >a{
+                @include color($texto,$fondo);
+                padding: 10px;
+                &:hover{
+                    @include color($texto2,$fondo2);
+                }
+            }
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+}
