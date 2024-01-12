@@ -18,8 +18,8 @@ $fondo2:#888;
     transition: $property $duration $timing;
 }
 @mixin animacion($property,$duration,$timing:linear){
-    -moz-transition: $property $duration $timing;
-    -webkit-transition: $property $duration $timing;
+    -moz-animation: $property $duration $timing;
+    -webkit-animation: $property $duration $timing;
     animation: $property $duration $timing;
 }
 @mixin box(){

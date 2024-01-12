@@ -50,8 +50,6 @@ nav ul {
 }
 .categoria:hover {
   background: #888;
-  -moz-transition: iluminar 0.4s linear;
-  -webkit-transition: iluminar 0.4s linear;
   animation: iluminar 0.4s linear;
 }
 .categoria:hover > .submenu {
@@ -86,8 +84,6 @@ nav ul {
 }
 .submenu > li:hover {
   background: #888;
-  -moz-transition: iluminar 0.4s linear;
-  -webkit-transition: iluminar 0.4s linear;
   animation: iluminar 0.4s linear;
 }
 
