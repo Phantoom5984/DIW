@@ -1,5 +1,16 @@
+@keyframes iluminar {
+  from {
+    color: #eee;
+    background-color: #666;
+  }
+  to {
+    color: #fff;
+    background-color: #888;
+  }
+}
 body {
-  width: 100%;
+  padding: 0;
+  width: 95%;
   height: 100%;
 }
 
@@ -14,7 +25,7 @@ header {
 }
 
 nav {
-  color: #eee;
+  width: 100%;
   background: #666;
 }
 nav ul {
@@ -22,6 +33,7 @@ nav ul {
 }
 
 .categoria {
+  width: 12.5%;
   text-decoration: none;
   padding: 10px;
   display: inline-block;
@@ -29,9 +41,18 @@ nav ul {
   text-align: center;
   position: relative;
 }
+.categoria a {
+  color: #eee;
+}
 .categoria a:hover {
   color: #fff;
+  padding: 10px 20px;
+}
+.categoria:hover {
   background: #888;
+  -moz-transition: iluminar 0.4s linear;
+  -webkit-transition: iluminar 0.4s linear;
+  animation: iluminar 0.4s linear;
 }
 .categoria:hover > .submenu {
   height: 200px;
@@ -40,22 +61,42 @@ nav ul {
 .submenu {
   position: absolute;
   height: 0px;
-  left: -20px;
+  left: -40px;
   overflow: hidden;
-  width: 145px;
-  transition: height 0.5s linear;
+  width: 100%;
+  transition: height 0.5s ease-out;
 }
 .submenu > li {
+  background: #666;
+  padding: 10px;
   display: block;
   text-align: center;
   position: relative;
 }
+.submenu > li:first-child {
+  margin-top: 10px;
+}
 .submenu > li > a {
   color: #eee;
-  background: #666;
   padding: 10px;
+  transition: padding 0.4s ease-out;
 }
 .submenu > li > a:hover {
   color: #fff;
+}
+.submenu > li:hover {
   background: #888;
+  -moz-transition: iluminar 0.4s linear;
+  -webkit-transition: iluminar 0.4s linear;
+  animation: iluminar 0.4s linear;
+}
+
+footer {
+  color: #eee;
+  background: #666;
+  padding: 5px;
+  position: absolute;
+  width: 99%;
+  bottom: 0px;
+  box-sizing: border-box;
 }/*# sourceMappingURL=screen.css.map */

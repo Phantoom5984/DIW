@@ -6,11 +6,40 @@ $fondo2:#888;
     color:$texto;
     background:$fondo;
 }
+@mixin colorF($fondo){
+    background:$fondo;
+}
+@mixin colorT($texto){
+    color:$texto;
+}
 @mixin transicion($property,$duration,$timing:linear){
+    -moz-transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
     transition: $property $duration $timing;
 }
+@mixin animacion($property,$duration,$timing:linear){
+    -moz-transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
+    animation: $property $duration $timing;
+}
+@mixin box(){
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@keyframes iluminar {
+    from {
+      color: #eee;
+      background-color: #666;
+    }
+    to {
+      color: #fff;
+      background-color: #888;
+    }
+  }
 body{
-    width: 100%;
+    padding: 0;
+    width: 95%;
     height: 100%;
 }
 a{
@@ -21,47 +50,70 @@ header{
     font-size: 2em;
 }
 nav{
-    @include color($texto,$fondo);
+    width: 100%;
+    @include colorF($fondo);
     ul{
         margin: 0px;
     }
 }
 .categoria{
+    width: calc(100%/8);
     text-decoration: none;
     padding: 10px;
     a{
-        
+        @include colorT($texto);
         &:hover{
-            @include color($texto2,$fondo2);
+            @include colorT($texto2);
+            padding: 10px 20px;
         }
     }
     display: inline-block;
     text-decoration: none;
     text-align: center;
     position: relative;
-    &:hover >.submenu{
+    &:hover{
+        @include colorF($fondo2);
+        @include animacion(iluminar,0.4s);
+        >.submenu{
             height: 200px;
+        }
     }
 }
-
-
 .submenu{
     position: absolute;
     height: 0px;
-    left:-20px;
+    left:-40px;
     overflow: hidden;
-    width: 145px;
-    @include transicion(height,0.5s,linear);
-    >li{ 
+    width: 100%;
+    @include transicion(height,0.5s,ease-out);
+    >li{
+        &:first-child{
+            margin-top: 10px;
+        }
+        @include colorF($fondo);
             >a{
-                @include color($texto,$fondo);
+                @include colorT($texto);
                 padding: 10px;
+                @include transicion(padding,0.4s,ease-out);
                 &:hover{
-                    @include color($texto2,$fondo2);
+                    @include colorT($texto2);
                 }
             }
+            &:hover{
+                @include colorF($fondo2);
+                @include animacion(iluminar,0.4s);
+            }
+            padding: 10px;
             display: block;
             text-align: center;
             position: relative;
         }
+}
+footer{
+    @include color($texto,$fondo);
+    padding: 5px;
+    position: absolute;
+    width: 99%;
+    bottom: 0px;
+    @include box();
 }
