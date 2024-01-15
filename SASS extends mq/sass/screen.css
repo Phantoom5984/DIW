@@ -1,0 +1,98 @@
+@keyframes iluminar {
+  from {
+    color: #eee;
+    background-color: #15a;
+  }
+  to {
+    color: white;
+    background-color: #166cd8;
+  }
+}
+body {
+  padding: 0;
+  width: 99%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  color: #0c3e7c;
+  background: rgb(214, 210, 210);
+  font-size: 2em;
+}
+
+nav {
+  width: 100%;
+  background: #15a;
+}
+nav ul {
+  margin: 0px;
+}
+
+.categoria {
+  width: 12.5%;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+.categoria a {
+  color: #eee;
+}
+.categoria a:hover {
+  color: white;
+  padding: 10px 20px;
+}
+.categoria:hover {
+  background: #166cd8;
+  animation: iluminar 0.4s linear;
+}
+.categoria:hover > .submenu {
+  height: 200px;
+}
+
+.submenu {
+  position: absolute;
+  height: 0px;
+  left: -40px;
+  overflow: hidden;
+  width: 100%;
+  transition: height 0.5s ease-out;
+}
+.submenu > li {
+  background: #15a;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.submenu > li:first-child {
+  margin-top: 10px;
+}
+.submenu > li > a {
+  color: #eee;
+  padding: 10px;
+  transition: padding 0.4s ease-out;
+}
+.submenu > li > a:hover {
+  color: white;
+}
+.submenu > li:hover {
+  background: #166cd8;
+  animation: iluminar 0.4s linear;
+}
+
+footer {
+  color: #eee;
+  background: #15a;
+  padding: 10px;
+  position: fixed;
+  width: 99%;
+  bottom: 0px;
+  box-sizing: border-box;
+}/*# sourceMappingURL=screen.css.map */
