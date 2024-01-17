@@ -1,0 +1,112 @@
+$texto:#eee;
+$texto2:lighten(#eee,10%);
+$fondo:#15a;
+$fondo2:lighten(#15a,10%);
+$titulo:darken(#15a,10%);
+$theme:light;
+@import "mixin";
+@import "contenido";
+@import "menu";
+@keyframes iluminar {
+    from {
+      color: $texto;
+      background-color: $fondo;
+    }
+    to {
+      color: $texto2;
+      background-color: $fondo2;
+    }
+  }
+body{
+    padding: 0;
+    width: 99%;
+    height: 100%;
+    @if $theme==dark{
+        background-color: #138;
+        color:#ddf;
+    }@else{
+        background-color: #ddf;
+        color: #138;
+    }
+}
+i{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+header{
+    @include color($titulo,rgb(214, 210, 210));
+    font-size: 2em;
+}
+#desktop{
+    width: 99%;
+    position: absolute;
+    @include colorF($fondo);
+    ul{
+        margin: 0px;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+.categoria{
+    width: calc(100%/8);
+    text-decoration: none;
+    padding: 10px;
+    a{
+        @include colorT($texto);
+        &:hover{
+            @include colorT($texto2);
+            padding: 10px 20px;
+        }
+    }
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    &:hover{
+        @include colorF($fondo2);
+        @include animacion(iluminar,0.4s);
+        >.submenu{
+            height: 200px;
+        }
+    }
+}
+.submenu{
+    position: absolute;
+    height: 0px;
+    left:0;
+    overflow: hidden;
+    width: 100%;
+    @include transicion(height,0.5s,ease-out);
+    >li{
+        &:first-child{
+            margin-top: 10px;
+        }
+        @include colorF($fondo);
+            >a{
+                @include colorT($texto);
+                padding: 10px;
+                @include transicion(padding,0.4s,ease-out);
+                &:hover{
+                    @include colorT($texto2);
+                }
+            }
+            &:hover{
+                @include colorF($fondo2);
+                @include animacion(iluminar,0.4s);
+            }
+            padding: 10px;
+            display: block;
+            text-align: center;
+            position: relative;
+        }
+}
+footer{
+    @include color($texto,$fondo);
+    padding: 10px;
+    position: fixed;
+    width: 99%;
+    bottom: 0px;
+    @include box();
+}

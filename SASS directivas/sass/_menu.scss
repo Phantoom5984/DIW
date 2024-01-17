@@ -1,0 +1,39 @@
+#mobile{
+    display: none;
+    float: right;
+    :hover ul{
+        height: auto;
+    }
+    ul{
+        margin: 0px;
+        height: 0px;
+        overflow: hidden;
+        list-style-type: none;
+        position: absolute;
+        right: 10px;
+        top: 40px;
+        a{
+            @include color($texto,#138);
+            text-decoration: none;
+            width: 160px;
+            padding: 7px 20px;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            font-size: 0.6em;
+            font-weight: normal;
+            :hover{
+                @include color(white,#1744b5);
+                @include animacion(iluminar,0.4s);
+            }
+        }
+    }
+}
+@include tamaño(max-width,1024px){
+    #mobile{
+        display: block;
+    }
+    #desktop{
+        display: none;
+    }
+}
