@@ -1,3 +1,64 @@
+#contenido .col-left button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#contenido .col-left input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+}
+
+#contenido {
+  padding: 30px 20px;
+}
+#contenido .col-left {
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+#contenido .col-left .button-action {
+  background-color: #15a;
+  color: white;
+}
+#contenido .col-left .button-action :hover {
+  background-color: white;
+}
+@media (max-width: 800px) {
+  #contenido .col-left {
+    float: none;
+    width: 100%;
+  }
+}
+#contenido .col-right {
+  box-sizing: border-box;
+  margin-left: 30%;
+  width: 70%;
+  padding: 10px;
+}
+#contenido .col-right h1 {
+  color: #0c3e7c;
+  font-size: 1.6em;
+}
+@media (max-width: 800px) {
+  #contenido .col-right {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  #contenido {
+    padding: 10px 20px;
+  }
+}
+
 @keyframes iluminar {
   from {
     color: #eee;

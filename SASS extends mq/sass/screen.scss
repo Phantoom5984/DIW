@@ -4,6 +4,7 @@ $fondo:#15a;
 $fondo2:lighten(#15a,10%);
 $titulo:darken(#15a,10%);
 @import "mixin";
+@import "contenido";
 @keyframes iluminar {
     from {
       color: $texto;

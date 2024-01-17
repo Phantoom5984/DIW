@@ -23,3 +23,8 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+@mixin tamaño($valor,$tamano){
+    @media($valor: $tamano){
+        @content;
+    }
+}
