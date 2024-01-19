@@ -92,7 +92,7 @@
   display: none;
   float: right;
 }
-#mobile :hover ul {
+#mobile:hover ul {
   height: auto;
 }
 #mobile ul {
@@ -110,13 +110,13 @@
   text-decoration: none;
   width: 160px;
   padding: 7px 20px;
-  display: block;
   text-align: center;
+  display: inline-block;
   cursor: pointer;
   font-size: 0.6em;
   font-weight: normal;
 }
-#mobile ul a :hover {
+#mobile ul a:hover {
   color: white;
   background: #1744b5;
   animation: iluminar 0.4s linear;
@@ -124,7 +124,7 @@
 
 @media (max-width: 1024px) {
   #mobile {
-    display: block;
+    display: inline-block;
   }
   #desktop {
     display: none;
@@ -172,8 +172,7 @@ header {
   padding: 0;
   list-style-type: none;
 }
-
-.categoria {
+#desktop ul .categoria {
   width: 12.5%;
   text-decoration: none;
   padding: 10px;
@@ -182,22 +181,21 @@ header {
   text-align: center;
   position: relative;
 }
-.categoria a {
+#desktop ul .categoria a {
   color: #eee;
 }
-.categoria a:hover {
+#desktop ul .categoria a:hover {
   color: white;
   padding: 10px 20px;
 }
-.categoria:hover {
+#desktop ul .categoria:hover {
   background: #166cd8;
   animation: iluminar 0.4s linear;
 }
-.categoria:hover > .submenu {
+#desktop ul .categoria:hover > .submenu {
   height: 200px;
 }
-
-.submenu {
+#desktop ul .categoria .submenu {
   position: absolute;
   height: 0px;
   left: 0;
@@ -205,25 +203,25 @@ header {
   width: 100%;
   transition: height 0.5s ease-out;
 }
-.submenu > li {
+#desktop ul .categoria .submenu > li {
   background: #15a;
   padding: 10px;
   display: block;
   text-align: center;
   position: relative;
 }
-.submenu > li:first-child {
+#desktop ul .categoria .submenu > li:first-child {
   margin-top: 10px;
 }
-.submenu > li > a {
+#desktop ul .categoria .submenu > li > a {
   color: #eee;
   padding: 10px;
   transition: padding 0.4s ease-out;
 }
-.submenu > li > a:hover {
+#desktop ul .categoria .submenu > li > a:hover {
   color: white;
 }
-.submenu > li:hover {
+#desktop ul .categoria .submenu > li:hover {
   background: #166cd8;
   animation: iluminar 0.4s linear;
 }

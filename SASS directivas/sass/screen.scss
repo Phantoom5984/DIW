@@ -47,61 +47,63 @@ header{
         margin: 0px;
         padding: 0;
         list-style-type: none;
-    }
-}
-.categoria{
-    width: calc(100%/8);
-    text-decoration: none;
-    padding: 10px;
-    a{
-        @include colorT($texto);
-        &:hover{
-            @include colorT($texto2);
-            padding: 10px 20px;
-        }
-    }
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    position: relative;
-    &:hover{
-        @include colorF($fondo2);
-        @include animacion(iluminar,0.4s);
-        >.submenu{
-            height: 200px;
-        }
-    }
-}
-.submenu{
-    position: absolute;
-    height: 0px;
-    left:0;
-    overflow: hidden;
-    width: 100%;
-    @include transicion(height,0.5s,ease-out);
-    >li{
-        &:first-child{
-            margin-top: 10px;
-        }
-        @include colorF($fondo);
-            >a{
+        .categoria{
+            width: calc(100%/8);
+            text-decoration: none;
+            padding: 10px;
+            a{
                 @include colorT($texto);
-                padding: 10px;
-                @include transicion(padding,0.4s,ease-out);
                 &:hover{
                     @include colorT($texto2);
+                    padding: 10px 20px;
                 }
             }
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
             &:hover{
                 @include colorF($fondo2);
                 @include animacion(iluminar,0.4s);
+                >.submenu{
+                    height: 200px;
+                }
             }
-            padding: 10px;
-            display: block;
-            text-align: center;
-            position: relative;
+            
+        .submenu{
+            position: absolute;
+            height: 0px;
+            left:0;
+            overflow: hidden;
+            width: 100%;
+            @include transicion(height,0.5s,ease-out);
+            >li{
+                &:first-child{
+                    margin-top: 10px;
+                }
+                @include colorF($fondo);
+                    >a{
+                        @include colorT($texto);
+                        padding: 10px;
+                        @include transicion(padding,0.4s,ease-out);
+                        &:hover{
+                            @include colorT($texto2);
+                        }
+                    }
+                    &:hover{
+                        @include colorF($fondo2);
+                        @include animacion(iluminar,0.4s);
+                    }
+                    padding: 10px;
+                    display: block;
+                    text-align: center;
+                    position: relative;
+                }
         }
+        }
+    }
 }
+
 footer{
     @include color($texto,$fondo);
     padding: 10px;
