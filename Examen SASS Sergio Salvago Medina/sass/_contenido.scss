@@ -1,0 +1,63 @@
+$iconos: ((menu, "../img/menu.png", 0px, 0px, 30px, 32px), (news, "../img/news.png", 0px, -90px, 30px, 39px), (money, "../img/money.png", 0px, -100px, 50px, 54px),
+(contact, "../img/contact.png", 0px, 0px, 30px, 30px));
+@import "extends";
+#contenido{
+    padding: 30px 20px;
+    .col-left{
+        box-sizing: border-box;
+        width: $witdhPorcentaje - 70%;//Hago una resta del 100% tanto aquí como en el div 'col-right' para que los dos quepan en el mismo bloque.
+        float: left;
+        padding: 10px;
+        input{
+             //Extiendo aquí 'input-block' porque quiero que tenga las propiedades de antes pero otras distintas a las de button, por eso uso un 'extend' de button luego.
+            @extend %input-block;
+        }
+        button{
+            @extend %button-block;
+        }
+        .button-action{
+            background-color: $fondo;
+            color: white;
+            &:hover{
+                color:$texto;
+                @if $theme==light{
+                    background-color: darken($fondo,10%);
+                }@else{
+                    background-color: lighten($fondo,20%);
+                }
+            }
+        }
+        @include tamaño("pequeño"){
+             //Para cuando el tamaño de la pantalla sea pequeño que el witdh sea el 100%.
+            float: none;
+            width: $witdhPorcentaje;
+        }
+    }
+    .col-right{
+        box-sizing: border-box;
+        margin-left: 30%;
+        width: $witdhPorcentaje - 30%;
+        padding: 10px;
+        h1{
+            color:$titulo;
+            font-size: 1.6em;
+        }
+        @include tamaño("pequeño"){
+            //Para cuando el tamaño de la pantalla sea pequeño que el witdh sea el 100%.
+            margin-left: 0;
+            width: $witdhPorcentaje;
+        }
+    }
+    @include tamaño("mediano"){
+         //Para cuando el tamaño de la pantalla sea mediano tenga ese padding.
+        padding: 10px 20px;
+    }
+}
+@each $icono in $iconos{
+    .icon-#{nth($icono,1)}{
+            background-image: url(nth($icono,2));
+            background-position: nth($icono,3) nth($icono,4);
+            height: nth($icono,5);
+            width:nth($icono,6);
+    }
+}

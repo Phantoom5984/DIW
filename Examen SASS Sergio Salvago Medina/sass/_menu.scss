@@ -1,0 +1,40 @@
+@import "funciones";
+#mobile{
+    display: none;
+    float: right;
+    &:hover ul{
+        height: auto;
+    }
+    ul{
+        margin: 0px;
+        height: 0px;
+        overflow: hidden;
+        list-style-type: none;
+        position: absolute;
+        right: 10px;
+        top: 40px;
+            a{
+                @include color($texto,#138);
+                text-decoration: none;
+                width: 160px;
+                padding: 7px 20px;
+                text-align: center;
+                display: inline-block;
+                cursor: pointer;
+                font-size: 0.6em;
+                font-weight: normal;
+                &:hover{
+                    @include color(white,grisear(#138));//Incluyo aquí la función de hacer más gris el fondo para que se sepa en que subapartado está.
+                }
+        }
+    }
+}
+@include tamaño("mediano"){
+    //Para cuando el tamaño de la pantalla sea mediano desaparezco el submenú grande y hago que aparezca el de 'mobile'.
+    #mobile{
+        display: inline-block;
+    }
+    #desktop{
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+@keyframes iluminar {
+    from {
+      color: $texto;
+      background-color: $fondo;
+    }
+    to {
+      color: $texto2;
+      background-color: $fondo2;
+    }
+}

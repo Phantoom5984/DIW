@@ -1,0 +1,45 @@
+@mixin color($texto,$fondo){
+    color:$texto;
+    background:$fondo;
+}
+@mixin colorF($fondo){
+    background:$fondo;
+}
+@mixin colorT($texto){
+    color:$texto;
+}
+@mixin transicion($property,$duration,$timing:linear){
+    -moz-transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
+    transition: $property $duration $timing;
+}
+@mixin animacion($property,$duration,$timing:linear){
+    -moz-animation: $property $duration $timing;
+    -webkit-animation: $property $duration $timing;
+    animation: $property $duration $timing;
+}
+@mixin box(){
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@mixin padWitHei($padding, $witdh, $height){
+    padding: $padding;
+    $witdh: $witdh;
+    $height: $height;
+}
+@mixin tamaño($valor){
+    @if $valor=="grande"{
+        @media(min-width: 1025px){
+            @content;
+        }
+    }@else if $valor=="mediano"{
+        @media(max-width: 1024px){
+            @content;
+        }
+    }@else if $valor=="pequeño"{
+        @media(max-width: 500px){
+            @content;
+        }
+    }
+}

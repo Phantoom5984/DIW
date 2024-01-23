@@ -1,0 +1,3 @@
+@function grisear($color){
+    @return grayscale($color); 
+}
