@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        .row {
+            border: 2px solid black;
+        }
+    </style>
+    <main>
+        <div class="container">
+            <div class="row" data-bs-theme="dark">
+                <div class="col-lg-12 col-md-6 col-sm-12" style="padding: 0;">
+                    <h1 style="text-align: center;">
+                        <img src="./imgs/logo.png" class="img-thumbnail" style="width: 50px; height: auto;">
+                        BIPAI
+                        <div class="btn-group" data-bs-theme="dark">
+                            <a href="#orbea" class="btn btn-secondary">Bicicletas</a>
+                            <a href="#accesorios" class="btn btn-secondary">Accesorios</a>
+                            <a href="#componentes" class="btn btn-secondary">Componentes</a>
+                        </div>
+                    </h1>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-12" style="padding: 0; height: 100%;">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <a class="navbar-brand" href="#">Inicio</a>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#orbea">Bicicletas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#accesorios">Accesorios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#componentes">Componentes</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Productos
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Sillines</a></li>
+                                            <li><a class="dropdown-item" href="#">Cascos</a></li>
+                                            <li><a class="dropdown-item" href="#">Tijas</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 col-md-10 col-sm-12 order-1 order-md-0">
+                    <div class="row">
+                        <div class="col-sm-12" style="padding: 0;">
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./imgs/accesorios.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block" style="color:black">
+                                            <h5>Accesorios</h5>
+                                            <p>Unas fotos de los accesorios.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imgs/componentes.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block" style="color:black">
+                                            <h5>Componentes</h5>
+                                            <p>Una foto de los componentes.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./imgs/orbea.jpg" class="d-block w-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block" style="color:black">
+                                            <h5>Orbea</h5>
+                                            <p>Una foto de la orbea.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 order-2 order-sm-0" style="padding: 0;">
+                            <div id="orbea" class="card" style="width: 100%; height: 100%;">
+                                <img src="./imgs/orbea.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bicicletas</h5>
+                                    <p class="card-text">Accede a nuestra sección de bicicletas donde podrás encontrar
+                                        las mejores de esta temporada</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 order-1 order-sm-1" style="padding: 0;">
+                            <div id="accesorios" class="card" style="width: 100%; height: 100%;">
+                                <img src="./imgs/accesorios.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Accesorios</h5>
+                                    <p class="card-text">Accede a nuestra sección de accesorios para bicicletas donde
+                                        podrás encontrar lo último del mercado</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 order-0 order-sm-2" style="padding: 0;">
+                            <div id="componentes" class="card" style="width: 100%; height: 100%;">
+                                <img src="./imgs/componentes.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Componentes</h5>
+                                    <p class="card-text">Accede a nuestra sección de componentes donde no te faltará
+                                        ningún componente</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-12 order-0 order-md-1" style="padding: 0;">
+                    <h1>TOP VENTAS 2023</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                            <label class="form-check-label" for="firstCheckbox">GIANT <span
+                                    class="badge text-bg-warning rounded-pill">1º</span></label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                            <label class="form-check-label" for="secondCheckbox">TRECK <span
+                                    class="badge text-bg-secondary rounded-pill">2º</span></label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">SPECIALIZED <span
+                                    class="badge text-bg rounded-pill"
+                                    style="background-color: purple;">3º</span></label>
+                        </li>
+                        <li class="list-group-item">
+                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                            <label class="form-check-label" for="thirdCheckbox">CANNONDALE <span
+                                    class="badge text-bg-success rounded-pill">4º</span></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-none d-md-block" style="padding: 0;">
+                    <p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidthExample" aria-expanded="false"
+                            aria-controls="collapseWidthExample">
+                            COPYRIGHT
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                          <div class=" card card-body" style="width: 300px;">
+                            Esta página es propiedad de Sergio Salvago Medina
+                        </div>
+                    </div>
+                </div>
+                    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
+                        data-bs-title="NUEVA WEB" data-bs-content="¡En construcción!">NUEVA WEB</button>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        // Inicializar popover
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl);
+        });
+    </script>
+</body>
+
+</html>
